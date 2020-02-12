@@ -27,20 +27,22 @@ By calling the script in the folder where following script is located:
 
 ```
     let test= {
-      description:"Test description"    //Using double quots (")
-      key:"testKey"                     //Text without empty space will be not touched
+      description:"Test description"            //Using double quots (")
+      key:"testKey"                             //Text without empty space will be not touched
     }
 
-    let string2 = 'Single text example';  //Using single quots (')
+    let string2 = 'Single text example';        //Using single quots (')
+    let string3 = "Hallo I'm the third text"    //Using quot in the text
 ```
 It will convert it to:
 ```
     let test= {
-      description:$localize `:@@test.test_description:Test description`         //Using double quots (")
-      key:"testKey"                                                             //Text without empty space will be not touched
+      description:$localize `:@@test.test_description:Test description`                //Using double quots (")
+      key:"testKey"                                                                    //Text without empty space will be not touched
     }
 
-    let string2 = $localize `:@@test.single_text_example:Single text example`;  //Using single quots (')
+    let string2 = $localize `:@@test.single_text_example:Single text example`;          //Using single quots (')
+    let string3 = $localize `:@@test.hallo_im_the_third_text:Hallo I'm the third text`  //Using quot in the text
 
 ```
 # WARNING
