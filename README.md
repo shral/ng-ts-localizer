@@ -2,7 +2,7 @@
 
 Simple nodejs helper script to prepare the strings in a TypeScript files for using the Angular i18n.
 
-Implemented while working for (j4care.com)[https://www.j4care.com/] on (dcm4chee-arc-light)[https://github.com/dcm4che/dcm4chee-arc-light]
+Implemented while working for [j4care.com](https://www.j4care.com/) on [dcm4chee-arc-light](https://github.com/dcm4che/dcm4chee-arc-light)
 
 ## Installation
 If you don't have nodejs on your Operating System install it first.
