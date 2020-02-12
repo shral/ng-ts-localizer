@@ -17,10 +17,6 @@ Navigate to the project and install the needed packages
 
 `npm install`
 
-/*Or you can use npm to install in your project:
-
-`npm install ng-ts-localizer --save-dev`*/
-
 Run the ng-ts-localizer:
 
 `node index.js --path=/thepathtotheproject/`
@@ -51,6 +47,6 @@ It will convert it to:
     let string3 = $localize `:@@myapp.hallo_im_the_third_text:Hallo I'm the third text`  //Using quot in the text
 
 ```
-# WARNING
+## WARNING
 This script is ment to be as helper script, use git diff to check if the modiffication is correct after run!
 
