@@ -46,5 +46,5 @@ let string3 = $localize `:@@myapp.hallo_im_the_third_text:Hallo I'm the third te
 
 ```
 ## WARNING
-This script is ment to be as helper script, use git diff to check if the modiffication is correct after run!
+This script is ment to be as helper script, you are running this script on your own risc, navigate first to the file what you want to modify and use git diff to check if the modiffication is correct after run!
 
