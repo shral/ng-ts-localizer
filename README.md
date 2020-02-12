@@ -38,7 +38,7 @@ It will convert it to:
 ```
 let test= {
   description:$localize `:@@myapp.test_description:Test description`                //Using double quots (")
-  key:"testKey"                                                                    //Text without empty space will be not touched
+  key:"testKey"                                                                    //Text without empty space will be ignored
 }
 
 let string2 = $localize `:@@myapp.single_text_example:Single text example`;          //Using single quots (')
