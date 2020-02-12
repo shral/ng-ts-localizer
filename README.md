@@ -26,7 +26,7 @@ Run the ng-ts-localizer:
 By calling the script in the folder where following script is located:
 
 ```
-/******test.ts*******/
+/******myapp.component.ts*******/
     let test= {
       description:"Test description"            //Using double quots (")
       key:"testKey"                             //Text without empty space will be not touched
@@ -37,14 +37,14 @@ By calling the script in the folder where following script is located:
 ```
 It will convert it to:
 ```
-/******test.ts*******/
+/******myapp.component.ts*******/
     let test= {
-      description:$localize `:@@test.test_description:Test description`                //Using double quots (")
+      description:$localize `:@@myapp.test_description:Test description`                //Using double quots (")
       key:"testKey"                                                                    //Text without empty space will be not touched
     }
 
-    let string2 = $localize `:@@test.single_text_example:Single text example`;          //Using single quots (')
-    let string3 = $localize `:@@test.hallo_im_the_third_text:Hallo I'm the third text`  //Using quot in the text
+    let string2 = $localize `:@@myapp.single_text_example:Single text example`;          //Using single quots (')
+    let string3 = $localize `:@@myapp.hallo_im_the_third_text:Hallo I'm the third text`  //Using quot in the text
 
 ```
 # WARNING
