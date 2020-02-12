@@ -25,7 +25,7 @@ function readFolder(currentPath){
 
 
           fs.stat(fromPath, function (error, stat) {
-            if(stat && stat.isFile() && file.indexOf(".ts") > -1){
+            if(stat && stat.isFile() && file.indexOf(".ts") > -1 && file.indexOf(".d.ts") === -1){
                     console.log("file:",file);
               if (error) {
                 console.error("Error stating file.", error);
@@ -60,7 +60,7 @@ function readFolder(currentPath){
                 });
               })
 
-            }else if(stat && stat.isDirectory()){
+            }else if(stat && stat.isDirectory() && file != "node_module"){
                 readFolder(fromPath)
               }   
         });
