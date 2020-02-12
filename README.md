@@ -26,6 +26,7 @@ Run the ng-ts-localizer:
 By calling the script in the folder where following script is located:
 
 ```
+/******test.ts*******/
     let test= {
       description:"Test description"            //Using double quots (")
       key:"testKey"                             //Text without empty space will be not touched
@@ -36,6 +37,7 @@ By calling the script in the folder where following script is located:
 ```
 It will convert it to:
 ```
+/******test.ts*******/
     let test= {
       description:$localize `:@@test.test_description:Test description`                //Using double quots (")
       key:"testKey"                                                                    //Text without empty space will be not touched
