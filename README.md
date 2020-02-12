@@ -48,5 +48,5 @@ It will convert it to:
 
 ```
 # WARNING
-This script is ment to be as helper scripts, use git diff to check if the modiffication is correct!
+This script is ment to be as helper script, use git diff to check if the modiffication is correct after rrun!
 
