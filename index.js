@@ -60,7 +60,7 @@ function readFolder(currentPath){
                 });
               })
 
-            }else if(stat && stat.isDirectory() && file != "node_module"){
+            }else if(stat && stat.isDirectory() && file != "node_modules"){
                 readFolder(fromPath)
               }   
         });
