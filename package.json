@@ -1,176 +1,27 @@
 {
-  {
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: {
-    undefined: $localize `:@@echo_\:echo \`Error: no test specified\" && exit 1"
+  "name": "ng-ts-localizer",
+  "version": "1.0.0",
+  "description": "Localize strings on TypeScript files to prepare for translation by i18n in an angular project",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
   },
-  undefined: undefined,
-  undefined: undefined
-}
-: {
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: {
-    undefined: $localize `:@@echo_\:echo \`Error: no test specified\" && exit 1"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  undefined: undefined,
-  undefined: undefined
-}
-,
-  {
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: {
-    undefined: $localize `:@@echo_\:echo \`Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shral/ng-tsLocalizer.git"
   },
-  undefined: undefined,
-  undefined: undefined
-}
-: {
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: {
-    undefined: $localize `:@@echo_\:echo \`Error: no test specified\" && exit 1"
+  "keywords": [
+    "angular",
+    "localizer",
+    "i18n"
+  ],
+  "author": "Shefki Esadi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shral/ng-tsLocalizer/issues"
   },
-  undefined: undefined,
-  undefined: undefined
-}
-,
-  {
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: {
-    undefined: $localize `:@@echo_\:echo \`Error: no test specified\" && exit 1"
-  },
-  undefined: undefined,
-  undefined: undefined
-}
-: {
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: {
-    undefined: $localize `:@@echo_\:echo \`Error: no test specified\" && exit 1"
-  },
-  undefined: undefined,
-  undefined: undefined
-}
-,
-  {
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: {
-    undefined: $localize `:@@echo_\:echo \`Error: no test specified\" && exit 1"
-  },
-  undefined: undefined,
-  undefined: undefined
-}
-: {
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: {
-    undefined: $localize `:@@echo_\:echo \`Error: no test specified\" && exit 1"
-  },
-  undefined: undefined,
-  undefined: undefined
-}
-,
-  {
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: {
-    undefined: $localize `:@@echo_\:echo \`Error: no test specified\" && exit 1"
-  },
-  undefined: undefined,
-  undefined: undefined
-}
-: {
-    {
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: {
-    undefined: $localize `:@@echo_\:echo \`Error: no test specified\" && exit 1"
-  },
-  undefined: undefined,
-  undefined: undefined
-}
-: {
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: {
-    undefined: $localize `:@@echo_\:echo \`Error: no test specified\" && exit 1"
-  },
-  undefined: undefined,
-  undefined: undefined
-}
-Error: no test specified\" && exit 1"
-  },
-  {
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: {
-    undefined: $localize `:@@echo_\:echo \`Error: no test specified\" && exit 1"
-  },
-  undefined: undefined,
-  undefined: undefined
-}
-: {
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: {
-    undefined: $localize `:@@echo_\:echo \`Error: no test specified\" && exit 1"
-  },
-  undefined: undefined,
-  undefined: undefined
-}
-,
-  {
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: {
-    undefined: $localize `:@@echo_\:echo \`Error: no test specified\" && exit 1"
-  },
-  undefined: undefined,
-  undefined: undefined
-}
-: {
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: undefined,
-  undefined: {
-    undefined: $localize `:@@echo_\:echo \`Error: no test specified\" && exit 1"
-  },
-  undefined: undefined,
-  undefined: undefined
-}
-
+  "homepage": "https://github.com/shral/ng-tsLocalizer#readme"
 }
