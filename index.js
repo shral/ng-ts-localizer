@@ -42,15 +42,21 @@ fs.readdir(workingPath, function (err, files) {
             maneNameOfFile = m[0];
           }
 
-          var result = data.replace(/("|')([\w\s.\\]*)("|')/g, function (match, p1, p2, p3, offset, string) {
-            if(p2.indexOf(" ") > -1){
-              console.log("Match:",p2);
-              return "$localize `:@@"+maneNameOfFile+p2.toLowerCase().replace(/\s/g, "_")+":"+p2+"`";
+          var result = data.replace(/(")([\w\s.\\']*)(")/g, function (match, p1, p2, p3, offset, string) {
+            if(p2.indexOf(" ") > -1 && p1 === p3){
+              return "$localize `:@@"+maneNameOfFile+p2.toLowerCase().replace(/\'/g, "").replace(/\s/g, "_")+":"+p2+"`";
             }else{
               return match;
             }
           });
-          fs.writeFile(fromPath, result, 'utf8', function (err) {
+          var endResult = result.replace(/(')([\w\s.\\"]*)(')/g, function (match, p1, p2, p3, offset, string) {
+            if(p2.indexOf(" ") > -1 && p1 === p3){
+              return "$localize `:@@"+maneNameOfFile+p2.toLowerCase().replace(/\'/g, "").replace(/\s/g, "_")+":"+p2+"`";
+            }else{
+              return match;
+            }
+          });
+          fs.writeFile(fromPath, endResult, 'utf8', function (err) {
              if (err) return console.log(err);
           });
         })
