@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /**
  * @author Shefki Esadi <shralsheki@gmail.com>
  * @since 12.02.2020
@@ -23,7 +25,7 @@ function readFolder(currentPath){
 
 
           fs.stat(fromPath, function (error, stat) {
-            if(stat.isFile() && file.indexOf(".ts") > -1){
+            if(stat && stat.isFile() && file.indexOf(".ts") > -1){
                     console.log("file:",file);
               if (error) {
                 console.error("Error stating file.", error);
@@ -58,7 +60,7 @@ function readFolder(currentPath){
                 });
               })
 
-            }else if (stat.isDirectory()){
+            }else if(stat && stat.isDirectory()){
                 readFolder(fromPath)
               }   
         });

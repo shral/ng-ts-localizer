@@ -1,6 +1,6 @@
 {
   "name": "ng-ts-localizer",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Localize strings on TypeScript files to prepare for translation by i18n in an angular project",
   "main": "index.js",
   "directories": {
@@ -20,6 +20,9 @@
   ],
   "author": "Shefki Esadi",
   "license": "MIT",
+  "bin":{
+  	"ng-ts-localizer":"./index.js"
+  },
   "bugs": {
     "url": "https://github.com/shral/ng-tsLocalizer/issues"
   },
