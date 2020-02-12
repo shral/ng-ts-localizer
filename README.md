@@ -7,7 +7,7 @@ Simple nodejs helper script to prepare the strings in a TypeScript files for usi
 ## Installation
 If you don't have nodejs on your Operating System install it first.
 
-Clone this project:
+Clone this project (or use `npm install ng-ts-localizer`):
 
 `git clone https://github.com/shral/ng-tsLocalizer.git`
 
