@@ -17,9 +17,9 @@ Navigate to the project and install the needed packages
 
 `npm install`
 
-Or you can use npm to install in your project:
+/*Or you can use npm to install in your project:
 
-`npm install ng-ts-localizer --save-dev`
+`npm install ng-ts-localizer --save-dev`*/
 
 Run the ng-ts-localizer:
 
