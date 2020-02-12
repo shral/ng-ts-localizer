@@ -9,7 +9,7 @@ If you don't have nodejs on your Operating System install it first.
 
 Clone this project:
 
-`git clone https://github.com/shral/cors-proxy.git`
+`git clone https://github.com/shral/ng-tsLocalizer.git`
 
 Navigate to the project and install the needed packages
 
