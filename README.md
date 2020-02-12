@@ -23,28 +23,26 @@ Run the ng-ts-localizer:
 
 `--path` parameter is optional if is not set it will search the folder where the script is located
 
-By calling the script in the folder where following script is located:
+By calling the script in the folder where following file `myapp.component.ts` is located:
 
 ```
-/******myapp.component.ts*******/
-    let test= {
-      description:"Test description"            //Using double quots (")
-      key:"testKey"                             //Text without empty space will be not touched
-    }
+let test= {
+  description:"Test description"            //Using double quots (")
+  key:"testKey"                             //Text without empty space will be not touched
+}
 
-    let string2 = 'Single text example';        //Using single quots (')
-    let string3 = "Hallo I'm the third text"    //Using quot in the text
+let string2 = 'Single text example';        //Using single quots (')
+let string3 = "Hallo I'm the third text"    //Using quot in the text
 ```
 It will convert it to:
 ```
-/******myapp.component.ts*******/
-    let test= {
-      description:$localize `:@@myapp.test_description:Test description`                //Using double quots (")
-      key:"testKey"                                                                    //Text without empty space will be not touched
-    }
+let test= {
+  description:$localize `:@@myapp.test_description:Test description`                //Using double quots (")
+  key:"testKey"                                                                    //Text without empty space will be not touched
+}
 
-    let string2 = $localize `:@@myapp.single_text_example:Single text example`;          //Using single quots (')
-    let string3 = $localize `:@@myapp.hallo_im_the_third_text:Hallo I'm the third text`  //Using quot in the text
+let string2 = $localize `:@@myapp.single_text_example:Single text example`;          //Using single quots (')
+let string3 = $localize `:@@myapp.hallo_im_the_third_text:Hallo I'm the third text`  //Using quot in the text
 
 ```
 ## WARNING
