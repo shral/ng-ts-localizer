@@ -21,7 +21,7 @@ Run the ng-ts-localizer:
 
 `node index.js --path=/thepathtotheproject/`
 
-`--path` parameter is optional if is not set it will search the folder where the script is located
+`--path` absolute path to the folder that should be chekced, this parameter is optional if it's not set it will search the folder where the script is located (You have to set this paramtere if you got the script from `npm install`)
 
 By calling the script in the folder where following file `myapp.component.ts` is located:
 
