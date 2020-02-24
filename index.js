@@ -25,7 +25,7 @@ function readFolder(currentPath){
 
 
           fs.stat(fromPath, function (error, stat) {
-            if(stat && stat.isFile() && file.indexOf(".ts") > -1 && file.indexOf(".d.ts") === -1){
+            if(stat && stat.isFile() && (file.indexOf(".ts") > -1 || file.indexOf(".html") > -1) && file.indexOf(".d.ts") === -1){
                     console.log("file:",file);
               if (error) {
                 console.error("Error stating file.", error);
@@ -40,17 +40,47 @@ function readFolder(currentPath){
                 if ((m = regex.exec(file)) !== null) {
                   maneNameOfFile = m[0];
                 }
-
-                var result = data.replace(/(")([\w\s.\\']*)(")/g, function (match, p1, p2, p3, offset, string) {
+                var result = data.replace(/(")([\$\{\}\.\!\:\w\s.\\']*)(")/g, function (match, p1, p2, p3, offset, string) {
                   if(p2.indexOf(" ") > -1 && p1 === p3){
-                    return "$localize `:@@"+maneNameOfFile+p2.toLowerCase().replace(/\'/g, "").replace(/\s/g, "_")+":"+p2+"`";
+                    return "$localize `:@@"+maneNameOfFile+p2
+                            .toLowerCase()
+                            .replace(/\'/g, "")
+                            .replace(/\:/g, "")
+                            .replace(/\!/g, "")
+                            .replace(/\$\{/g, "")
+                            .replace(/\}/g, "")
+                            .replace(/\./g, "")
+                            .replace(/\s/g, "_")+":"+p2+"`";
                   }else{
                     return match;
                   }
                 });
-                var endResult = result.replace(/(')([\w\s.\\"]*)(')/g, function (match, p1, p2, p3, offset, string) {
+                var result2 = result.replace(/(`)([\$\{\}\.\!\:\w\s.\\']*)(`)/g, function (match, p1, p2, p3, offset, string) {
                   if(p2.indexOf(" ") > -1 && p1 === p3){
-                    return "$localize `:@@"+maneNameOfFile+p2.toLowerCase().replace(/\'/g, "").replace(/\s/g, "_")+":"+p2+"`";
+                    return "$localize `:@@"+maneNameOfFile+p2
+                            .toLowerCase()
+                            .replace(/\'/g, "")
+                            .replace(/\:/g, "")
+                            .replace(/\!/g, "")
+                            .replace(/\$\{/g, "")
+                            .replace(/\}/g, "")
+                            .replace(/\./g, "")
+                            .replace(/\s/g, "_")+":"+p2+"`";
+                  }else{
+                    return match;
+                  }
+                });
+                var endResult = result2.replace(/(')([\$\{\}\.\!\:\w\s.\\']*)(')/g, function (match, p1, p2, p3, offset, string) {
+                  if(p2.indexOf(" ") > -1 && p1 === p3){
+                    return "$localize `:@@"+maneNameOfFile+p2
+                            .toLowerCase()
+                            .replace(/\'/g, "")
+                            .replace(/\:/g, "")
+                            .replace(/\!/g, "")
+                            .replace(/\$\{/g, "")
+                            .replace(/\}/g, "")
+                            .replace(/\./g, "")
+                            .replace(/\s/g, "_")+":"+p2+"`";
                   }else{
                     return match;
                   }
